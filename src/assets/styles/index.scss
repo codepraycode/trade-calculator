@@ -184,7 +184,8 @@ input {
 
 
     &::placeholder {
-        color: $light-grayish-cyan;
+        color: $grayish-cyan;
+        font-size: .7rem;
     }
 
     &:focus {
@@ -319,6 +320,13 @@ input {
 }
 
 
+.entries {
+    display: flex;
+    align-items: center;
+
+    column-gap: 1rem;
+}
+
 button {
     display: block;
     width: 90%;
@@ -354,4 +362,9 @@ button {
     &-small {
         font-size: .66rem;
     }
+    &-capitalize {
+        text-transform: capitalize;
+    }
 }
+
+

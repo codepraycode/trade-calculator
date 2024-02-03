@@ -14,7 +14,7 @@ const TipSelect = ()=>{
             <input
                 type="text"
                 name={"custom-tip"}
-                placeholder={"Custom"}
+                placeholder={"custom lot"}
             />
         </div>
     )

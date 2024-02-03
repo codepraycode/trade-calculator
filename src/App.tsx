@@ -45,27 +45,40 @@ function App() {
                 <div className="calculator">
                     {/* Left side */}
                     <div className="_left">
-                        <Input
-                            name="bill"
-                            icon="&#36;"
-                            placeholder="0"
-                            label="Bill"
-                            onChange={()=>({})}
-                        />
+
+                        <div className="entries">
+                            <Input
+                                name="entry"
+                                icon="&#36;"
+                                placeholder="0"
+                                label="entry"
+                                onChange={()=>({})}
+                            />
+
+
+                            <Input
+                                name="exit"
+                                icon="&#36;"
+                                placeholder="0"
+                                label="exit"
+                                onChange={()=>({})}
+                            />
+
+                        </div>
 
                         {/* Tip buttons */}
                         <div className="tips-selects">
-                            <label className="text-small text-bold">Select Tip %</label>
+                            <label className="text-small text-bold text-capitalize">lot size %</label>
 
                             <TipSelect />
                         </div>
 
                         {/* People */}
                         <Input
-                            name="people"
-                            icon={<i className="fas fa-user"/>}
+                            name="exit"
+                            icon="&#36;"
                             placeholder="0"
-                            label="Number of people"
+                            label="Expected amount"
                             // error={"Cannot be empty"}
                             onChange={()=>({})}
                         />
@@ -101,3 +114,4 @@ function App() {
 }
 
 export default App;
+

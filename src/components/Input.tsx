@@ -15,7 +15,7 @@ const Input = (props: IInput) => {
     return (
         <div className="calculator-input" data-error={Boolean(error)}>
             <label className="text-small" htmlFor={`${name}-input`}>
-                <b>{label}</b>
+                <b className="text-capitalize">{label}</b>
                 <b className="error">{error}</b>
             </label>
 
@@ -23,8 +23,8 @@ const Input = (props: IInput) => {
                 <b>{icon}</b>
                 <input
                     type="text"
-                    id={`${name}-input`}
-                    name={name}
+                    id={`${name.toLowerCase()}-input`}
+                    name={name.toLowerCase()}
                     placeholder={placeholder}
                     onChange={onChange}
                 />
