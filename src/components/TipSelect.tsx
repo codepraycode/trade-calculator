@@ -5,9 +5,9 @@ const TipSelect = ()=>{
     return (
         <div className="tip-items">
             {
-                tips.map((item)=>(
+                tips.map((item,i)=>(
 
-                    <input value={`${item}%`} type="button" data-selected={"true"}/>
+                    <input key={i} value={`${item}%`} type="button" data-selected={"true"}/>
                 ))
             }
 
