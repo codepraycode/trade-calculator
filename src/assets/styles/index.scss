@@ -82,6 +82,7 @@ header {
     font-size: 1.1rem;
     text-transform: uppercase;
     letter-spacing: 0.4rem;
+
 }
 
 
@@ -136,7 +137,7 @@ header {
 
         background-color: $white;
         border-radius: .4rem;
-        width: 37rem;
+        width: 45rem;
         margin-top: .5rem;
         max-width: 90%;
     }
@@ -154,7 +155,7 @@ header {
 
     ._right {
         background-color: $very-dark-cyan;
-        padding-block: 1.8rem;
+        padding-block: 1rem;
         padding-inline: .55rem;
         border-radius: .55rem;
     }
@@ -251,6 +252,37 @@ input {
 }
 
 
+.title {
+    margin-bottom: .4rem;
+}
+
+
+.specific {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    font-size: .8rem;
+
+    margin-block: .5rem;
+}
+.suggestive-category {
+    font-size: .6rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    span {
+        // align-self: flex-end;
+        display: inline-block;
+        // background-color: red;
+        text-align: center;
+    }
+
+    &.items {
+        font-size: 1rem;
+    }
+}
+
 .tips-selects {
     margin-block: 1.9rem;
 
@@ -294,28 +326,26 @@ input {
 
 .output {
     margin-block: .55rem;
-    margin-inline: 1.27rem;
+    // margin-inline: 1.27rem;
 
 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
+    
     .label {
-        font-size: .7rem;
+        // display: flex;
+        // align-items: center;
+        // justify-content: space-between;
+
+        // font-size: 1rem;
         color: $dark-grayish-cyan;
         font-weight: 500;
+
+        margin-block: 1rem;
+
         b {
             display: block;
-            font-size: .6rem;
             color: $light-grayish-cyan;
+            text-transform: capitalize;
         }
-    }
-
-    .amount {
-        font-size: 1.5rem;
-        text-align: end;
-        color: $strong-cyan;
     }
 }
 

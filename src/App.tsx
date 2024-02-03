@@ -8,7 +8,7 @@ function App() {
     return (
         <>
             <header>
-                <h3 className="header">Spli<br/>tter</h3>
+                <h3 className="header">Dije<br/>rrati</h3>
             </header>
 
             {/* Calculator card */}
@@ -68,9 +68,10 @@ function App() {
 
                         {/* Tip buttons */}
                         <div className="tips-selects">
-                            <label className="text-small text-bold text-capitalize">lot size %</label>
+                            <h3 className="title text-small text-bold text-capitalize">lot size %</h3>
 
                             <TipSelect />
+                            
                         </div>
 
                         {/* People */}
@@ -86,21 +87,18 @@ function App() {
 
                     {/* Right side */}
                     <div className="_right">
+                        <h3 className=" text-small text-bold text-capitalize">
+                            {/* Suggestions */}
+
+                            
+                        </h3>
+
                         <Output
-                            label="Tip Amount"
-                            per="person"
-                            value={null}
-                        />
-                        <br/>
-                        <Output
-                            label="Total"
+                            label="Suggestions"
                             per="person"
                             value={null}
                         />
 
-                        <br/>
-                        <br/>
-                        <br/>
 
                         <button disabled>
                             Reset

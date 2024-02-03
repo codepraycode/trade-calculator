@@ -7,6 +7,29 @@ interface IOutput {
 }
 
 
+const sample = [
+    {
+        label: "entry point",
+        value: '10203.10',
+        isResult: false
+    },
+    {
+        label: "exit point",
+        value: '--',
+        isResult: false
+    },
+    {
+        label: "lot size",
+        value: '--',
+        isResult: false
+    },
+    {
+        label: "amount expected",
+        value: '--',
+        isResult: true
+    }
+]
+
 const Output = (props:IOutput) => {
 
     let figure = props.defaultValue || 0;
@@ -15,16 +38,36 @@ const Output = (props:IOutput) => {
         figure = props.value
     }
 
+    console.log(figure)
+
     return (
         <div className="output">
-            <span className="label">
-                <b>{props.label}</b>
-                / {props.per}
-            </span>
 
-            <b className="amount">
-                &#36;{figure.toFixed(2)}
-            </b>
+            {/* <div className="suggestive-category">
+                <span>Low</span>
+                <span>Medium</span>
+                <span>High</span>
+            </div> */}
+            {
+                sample.map((item, i)=>(        
+                    <div key={i} className="label">
+
+                        <div className="specific">
+                            <b>{item.label}  </b>
+                            <span className="amount">&#36; 10232.90</span>
+
+                        </div>
+
+                        <div className="suggestive-category">
+
+                            <span>&#36;{item.value}</span>
+                            <span>&#36;{item.value}</span>
+                            <span>&#36;{item.value}</span>
+                        </div>
+                    </div>
+                ))
+            }
+
         </div>
     )
 }
