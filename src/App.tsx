@@ -42,9 +42,6 @@ function App() {
                     />
                 </div>
 
-
-
-
                 {/* Right side */}
                 <div className="_right">
                     <Output
